@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Guia Creativa</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/Logo_GC.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Logo_GC.ico">
+  
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <!-- Load map styles -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+<!--
+    
+TemplateMo 559 Zay Shop
+
+https://templatemo.com/tm-559-zay-shop
+
+-->
+</head>
+
+<body>
+    <!-- Start Top Nav -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                </div>
+                <div>
+                    <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Top Nav -->
+
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html" style="color: blue;">
+                Guia Creativa
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Matematicas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Fisica</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Quimica</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--
+                <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
+                    </a>
+                </div>
+            -->
+            </div>
+
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<!--
+    
+    <div class="container-fluid bg-light py-5">
+        <div class="col-md-6 m-auto text-center">
+            <h1 class="h1">Contact Us</h1>
+            <p>
+                Proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+    </div>   
+    <div id="mapid" style="width: 100%; height: 300px;"></div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script>
+        var mymap = L.map('mapid').setView([-23.013104, -43.394365, 13], 13);
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+            maxZoom: 18,
+            attribution: 'Zay Telmplte | Template Design by <a href="https://templatemo.com/">Templatemo</a> | Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+                '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1
+        }).addTo(mymap);
+
+        L.marker([-23.013104, -43.394365, 13]).addTo(mymap)
+            .bindPopup("<b>Zay</b> eCommerce Template<br />Location.").openPopup();
+
+        mymap.scrollWheelZoom.disable();
+        mymap.touchZoom.disable();
+    </script>
+    
+    <div class="container py-5">
+        <div class="row py-5">
+            <form class="col-md-9 m-auto" method="post" role="form">
+                <div class="row">
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="inputname">Name</label>
+                        <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Name">
+                    </div>
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="inputemail">Email</label>
+                        <input type="email" class="form-control mt-1" id="email" name="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="inputsubject">Subject</label>
+                    <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Subject">
+                </div>
+                <div class="mb-3">
+                    <label for="inputmessage">Message</label>
+                    <textarea class="form-control mt-1" id="message" name="message" placeholder="Message" rows="8"></textarea>
+                </div>
+                <div class="row">
+                    <div class="col text-end mt-2">
+                        <button type="submit" class="btn btn-success btn-lg px-3">Let’s Talk</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+-->
+<section class="fondo">
+<section class="links">
+    <div class="container-fluid text-center text-md-left">
+        <div class="row">
+            <div class="col-sm-12 col-md-5" id="q1">
+                <div class="title">
+
+                    <h1>Química I</h1>
+                
+                </div>
+
+                <br>
+                <a class="linkq" href="#U1Mat">
+                   <span>Unidad 1. Materia </span> 
+                </a>
+                <br>
+                <br>
+                <a class="linkq" href="#U2EsA">
+                    <span>Unidad 2. Estructura Atómica </span> 
+                </a>
+                <br>
+                <br>
+
+                <a class="linkq" href="#U3TP">
+                  <span> Unidad 3. Tabla Periódica </span> 
+                </a>
+                <br>
+                <br>
+                <a class="linkq" href="#U4EQ">
+                </span>Unidad 4. Enlace Químico</span> 
+                </a>
+                <br>
+                <br>
+
+                <a class="linkq" href="#U5NQI">
+                <span>Unidad 5. Nomenclatura Química Inorgánica</span> 
+                </a>
+                <br>
+                <br>
+
+                <a class="linkq" href="#U6RQI">
+                   <span>Unidad 6. Reacciones químicas inorgánicas</span>
+                </a>
+                <br>
+                <br>
+            </div>
+
+            <div class="col-sm-12 col-md-4">
+             
+            </div>
+
+            <div class="col-sm-12 col-md-3">
+                <div class="title">
+
+                    <h1>Química II</h1>
+                
+                </div>
+                <br>
+
+                <a class="linkq" href="#U1RQI">
+
+                    <span>Unidad 1. Reacciones químicas inorgánicas</span> 
+                </a>
+                <br>
+                <br>
+              
+                <a class="linkq" href="#U2BDEQ">
+                    <span>Unidad 2. Balanceo de ecuaciones químicas </span> 
+                </a>
+                <br>
+                <br>
+                <a class="linkq" href="#U3Est">
+                    <span>Unidad 3. Estequiometría </span>
+                </a>
+                <br>
+                <br>
+
+                <a class="linkq" href="#U4ECO">
+                    <span>Unidad 4. Estructura de compuestos orgánicos </span> 
+                </a>
+                <br>
+                <br>
+
+                <a class="linkq" href="#U5NACO">
+                   <span>Unidad 5. Nomenclatura y aplicación de compuestos orgánicos </span> 
+                </a>
+                <br>
+                <br>
+                     
+               
+        
+            </div>
+        </div>
+    </div>
+
+</section>
+</section>
+
+
+
+<section class="vidq"><!--beginning of videoListContainer-->
+    <h1 id="U1Mat">
+        Unidad 1. Materia
+    </h1>
+    <div class="video-box color1">
+       <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+       <br><br>
+       
+       <h4>Introducción a la Química</h4><br>
+        
+       <iframe width="600px" height="300px" src="https://www.youtube.com/embed/4kFzv6ql4bI?si=eXlXBNd7aOis1cQt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" 
+       style="padding-left: 30px; padding-top: 2px; padding-right: 50px; "></iframe>
+
+
+      
+    </div>
+
+    <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Materia y energía</h4><br>
+       
+
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/mJqXSyg86mQ?si=mts3HWNcpw0x0IVC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+      
+    </div>
+
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Propiedades de la materia</h4><br>
+         
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/B5e057vReVY?si=tqBhl27015vHGshq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+ 
+ 
+       
+    </div>
+     
+     <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Fenómenos físicos y químicos</h4><br>
+       
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/7TnRm8Pa8F0?si=dTPbjYTYySeF0Uh6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px; "></iframe>
+       
+      
+    </div>
+
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Elemento, compuesto y mezcla</h4><br>
+         
+ 
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/h5nFrZpunZw?si=jjnfqAsveyU-L_3_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px; "></iframe>
+       
+    </div>
+
+    <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Métodos de separación de mezclas</h4><br>
+        
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/cCrLNdCP58g?si=a1iuocWzkiicgyer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px; "></iframe>
+    </div>
+	
+    <h1 id="U2EsA">
+        Unidad 2. Estructura Atómica
+    </h1>
+
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>El átomo</h4><br>
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/7IkyrGtm98U?si=RmhKGmeyEoflUPSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px; "></iframe>
+       
+    </div>
+	
+    <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Números cuánticos</h4><br>
+       
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/38UaE2urqIY?si=4qyjui2-bf3_crlR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px; "></iframe>
+      
+    </div>
+
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Estructura atómica</h4><br>
+         
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/9NinSk1KLLs?si=9dOQP6nqliVVelOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px; "></iframe>
+ 
+       
+    </div>
+	
+    	 
+    <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Principio de Construcción o Aufbau</h4><br>
+       
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/y5byMDboyOk?si=dA_N_6S3i9HCIkeR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px; "></iframe>
+      
+    </div>
+   
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Configuración electrónica</h4><br>
+         
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/Y5FlYunEHZI?si=zSvYEorJNFro6NRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+    </div>
+
+    	 
+    <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Antecedentes de tabla periódica</h4><br>
+        
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/5PnF4a6w4Ng?si=4wBaZemEhFmUGg5C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+
+      
+    </div>
+
+    <h1 id="U3TP">
+        Unidad 3. Tabla Periódica
+	</h1>
+	
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Construcción de la tabla periódica</h4><br>
+         
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/iit4Y8P9iF0?si=0Kjwgzom0K1nFT-1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+ 
+    </div>
+	
+    <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Tabla periódica</h4><br>
+       
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/h03j71SbRZE?si=NTVByW4MwUeFpb1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+
+      
+    </div>
+
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Propiedades periódicas</h4><br>
+         
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/Yk50NiVneus?si=WoDOscGRk3Foppep" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+ 
+    </div>
+    
+	<h1 id="U4EQ">
+        Unidad 4. Enlace Químico
+	</h1>
+
+    <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Enlace químico</h4><br>
+       
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/EcPXjvqHWTM?si=rTdsrNko-KdX2zfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+
+      
+    </div>
+	
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Enlace iónico</h4><br>
+         
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/6CoHhfr7ucQ?si=fjKebMVGyImTX1ys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+ 
+    </div>
+    	 
+    <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Enlace covalente</h4><br>
+       
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/L9hD3S8K1fI?si=-17f1mN1g1J5vrsN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+
+    </div>
+
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Simple, doble y triple covalencia</h4><br>
+         
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/LPlpgSEs1bg?si=_4vLl7U7GLgVt2PK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+
+    </div>
+    	 
+    <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Enlace covalente coordinado</h4><br>
+       
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/b3cwkmh7TAo?si=XRj58kr2tKYRoKOm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+
+      
+    </div>
+
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Hibridación</h4><br>
+         
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/4WqdXvSnzvk?si=0Vc4qNcdIhnXMVL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+ 
+    </div>
+
+    	 
+    <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Puente de hidrógeno y enlace metálico</h4><br>
+       
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/_OKDfCwYbXM?si=9NGdVeF0TLkyizxb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+
+    </div>
+
+    <h1 id="U5NQI">
+        Unidad 5. Nomenclatura Química Inorgánica
+	</h1>
+
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Nomenclatura química inorgánica</h4><br>
+         
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/MCgBkzyc6k4?si=3JZJ5V2gFdIJ7bck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+ 
+    </div>
+
+    	 
+    <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Determinación de los números de oxidación</h4><br>
+       
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/xo23nUrtKLM?si=shHGjk7Qg0QoIXq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+
+    </div>
+
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Hidruros metálicos</h4><br>
+
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/k8QifKQIkTo?si=ALEGuYVkEuQwMGIl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+
+    </div>
+
+    <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Hidruros no metálicos</h4><br>
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/tX4lE6_8F24?si=toml7QBoXKywOeQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+
+    </div>
+
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Oxidos metálicos</h4><br>
+         
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/R069DM8MUz4?si=0NU9A_I6pAfbxe9n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+ 
+       
+    </div>
+	
+	
+	 
+     <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Oxidos no metálicos</h4><br>
+       
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/BAcPdVzHeTg?si=Ufv4MFnPMTaZuCLb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+      
+    </div>
+	
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Hidróxidos</h4><br>
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/8LGRMdS5wT0?si=8rv2CWpyTSVNbVDp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+ 
+    </div>
+	
+	
+	 
+     <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Oxoácidos</h4><br>
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/2yt6sasm-qc?si=3swJFviTrWTCZCQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+
+    </div>
+
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Sales binarias</h4><br>
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/IGPURDkyjuk?si=ruAUawQGodgXCr9B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+
+    </div>
+	
+	
+	 
+    <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Oxosales</h4><br>
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/zRO8wBx5f_U?si=9O55IF1uRsNfT0vw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+
+    </div>
+
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Sales ácidas</h4><br>
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/lFVy1nv64zQ?si=LoqWTk1GrqCxEfjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+ 
+    </div>
+
+ 	   <h1 id="U6RQI">
+        Unidad 6. Reacciones químicas inorgánicas
+	</h1>
+	
+	 
+     <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Reacciones químicas inorgánicas (primera parte)</h4><br>
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/DL9Q6zHIh7w?si=Cwk-975pdEcnpo9X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+
+      
+    </div>
+
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Reacciones químicas inorgánicas (segunda parte)</h4><br>
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/HHvrBGMPGDA?si=DBHfuMNDsBViUX2d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+ 
+    </div>
+<!--Quimica 2-->
+   
+    <h1 id="U1RQI">
+        Unidad 1. Reacciones químicas inorgánicas
+    </h1>
+
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Reacciones químicas inorgánicas parte I</h4><br>
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/DL9Q6zHIh7w?si=JEE_z6bjmI9_B2pj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+
+    </div>
+    
+     <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Reacciones químicas inorgánicas parte II</h4><br>
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/HHvrBGMPGDA?si=o-e3fFCDEpdybe29" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+
+    </div>
+
+
+    <h1 id="U2BDEQ">
+        Unidad 2. Balanceo de ecuaciones químicas
+    </h1>
+
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Balanceo: Método por tanteo</h4><br>
+         <iframe width="600px" height="300px" src="https://www.youtube.com/embed/kEC32yL3v10?si=T5D8ML_ZJco9G7Qp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+ 
+    </div>
+	 
+     <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Balanceo: Método RedOx</h4><br>
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/PhaC2iMIOvg?si=VzBYcCcLkbPqNBWR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+    </div>
+
+    <h1 id="U3Est">
+        Unidad 3. Estequiometría
+    </h1>
+
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Estequiometría: Unidades físicas y química</h4><br>
+         <iframe width="600px" height="300px" src="https://www.youtube.com/embed/3iwcs-B2Jfc?si=hrqOCtz5E9l9I6jL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+    </div>
+	
+
+     <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Estequiometría: Leyes ponderales</h4><br>
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/fJOpGRGZNW4?si=FxyjiUSBvBvpeDbJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+    </div>
+
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Estequiometría: Relaciones estequiométricas</h4><br>
+         <iframe width="600px" height="300px" src="https://www.youtube.com/embed/02hfRk-3XgA?si=RyKq6Ct4U0G5Un3i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+    </div>
+	
+	
+	 
+     <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Estequiometría: Reactivo limitante y rendimiento </h4><br>
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/EpLi7o9R5QE?si=R1JTGulPvU7VszXB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="padding-left: 30px; padding-top: 2px; padding-right: 50px;"></iframe>
+    </div>
+
+
+    <h1 id="U4ECO">
+        Unidad 4. Estructura de compuestos orgánicos
+    </h1>
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Estructura de compuestos orgánicos parte I</h4><br>
+        <iframe class="vidqm"  src="https://www.youtube.com/embed/TqYnfIZUZXs?si=snBZVrqLnhOnwBGu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    </div>
+	
+	
+	 
+     <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Estructura de compuestos orgánicos parte II</h4><br>
+        
+        <iframe  class ="vidqm" height="315" src="https://www.youtube.com/embed/qteS900VbL4?si=lmW1n0a7meQ0-P6J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+     </div>
+
+    <h1 id="U5NACO">
+        Unidad 5. Nomenclatura y aplicación de compuestos orgánicos
+    </h1>
+
+    <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4> Nomenclatura de compuestos orgánicos. Alcanos lineales </h4><br>
+        <iframe class="vidqm" height="315" src="https://www.youtube.com/embed/30masYBTznE?si=cNaEbyB0aAIFxUQ-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    </div>
+	
+	
+	 
+     <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Alcanos arborescentes y ciclos</h4><br>
+        
+        <iframe class="vidqm" height="315" src="https://www.youtube.com/embed/BfzQ5tfFyuw?si=Ehstm8V4lCnYe7qJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+     </div>
+
+     <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Instructivo crítico. Alquenos</h4><br>
+        <iframe class="vidqm" height="315" src="https://www.youtube.com/embed/7BCU2SwLTCQ?si=q82Pv54VMm98DjKn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+	
+	
+	 
+     <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Instructivo crítico. Alquinos</h4><br>
+        <iframe class="vidqm" height="315" src="https://www.youtube.com/embed/wNmzeed0qNk?si=CaXn509rDDzCA-H0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+     </div>
+
+     <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4> Instructivo crítico. Halogenuros de alquilo</h4><br>
+        <iframe class="vidqm" height="315" src="https://www.youtube.com/embed/-QTmGV50-6U?si=RV3-BmhlsTVxmTsO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+	
+	
+	 
+     <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Instructivo crítico. Alcoholes</h4><br>
+        <iframe class="vidqm" height="315" src="https://www.youtube.com/embed/FaLeOVNYCN0?si=UC5nfS0qFts3FfeN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+     </div>
+
+     <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Instructivo crítico. Cetonas</h4><br>
+        <iframe class="vidqm" height="315" src="https://www.youtube.com/embed/1fmGgU7S8mw?si=uNnNZvm9TeqttFBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+	
+	
+	 
+     <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Instructivo crítico. Aldehídos</h4><br>
+        <iframe class="vidqm" height="315" src="https://www.youtube.com/embed/pneAiTsn6_g?si=ZfbgiBq7fNPA4TDB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+     </div>
+
+     <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Instructivo crítico. Éteres</h4><br>
+        <iframe class="vidqm" height="315" src="https://www.youtube.com/embed/Vqq4Jf9sPKY?si=h6bZgNxvwhp_BdoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+	
+	
+	 
+     <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4> Instructivo crítico. Ácidos carboxílicos</h4><br>
+        <iframe class="vidqm" height="315" src="https://www.youtube.com/embed/_RR8absV5gI?si=CnMQIWMLPwYIwSSX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+     </div>
+
+     <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4> Instructivo crítico. Sales orgánicas</h4><br>
+        <iframe class="vidqm" height="315" src="https://www.youtube.com/embed/2yJO49Ko5Lo?si=pV-ZCXocw3a2vWxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+	
+	
+	 
+     <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Instructivo crítico. Ésteres</h4><br>
+        <iframe class="vidqm" height="315" src="https://www.youtube.com/embed/jw6mt7OuhT8?si=Eq4OnNAEDBkDmy0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+     </div>
+
+     <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4> Instructivo crítico. Amidas</h4><br>
+        <iframe class="vidqm" height="315" src="https://www.youtube.com/embed/02_z6cHaCCo?si=cCg_9_8CHhRuseeD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+	
+	
+	 
+     <div class="video-box color2">
+        <!--<a href="#video-pop"><img src="images/video2.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        <h4>Instructivo crítico. Aminas</h4><br>
+        <iframe class="vidqm" height="315" src="https://www.youtube.com/embed/wrbAg7Pq_R0?si=0z_r5ArA910tCh04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+     </div>
+
+     
+     <div class="video-box color1">
+        <!-- <a href="#video-pop"><img src="images/video1.jpg" width="100%" alt=""></a>-->
+        <br><br>
+        
+        <h4>Series homólogas e isomería</h4><br>
+        <iframe class="vidqm" height="315" src="https://www.youtube.com/embed/m4vPq_P7nBo?si=y9hNSwnVkrHbhbYK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+
+	
+</section><!--end of videoListContainer page-->
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Guia Creativa</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            123 Consectetur at ligula 10660
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Directorio</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="index.html">Guia Creativa</a></li>
+                        <li><a class="text-decoration-none" href="about.html">Matematicas</a></li>
+                        <li><a class="text-decoration-none" href="shop.html">Física</a></li>
+                        <li><a class="text-decoration-none" href="contact.html">Química</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                        </li>
+                        <br>
+                        <br>
+
+
+                        <!--<p>La información y los materiales presentados en esta sección han sido gentilmente proporcionados por los siguientes autores, a quienes extendemos nuestro más sincero agradecimiento por permitirnos compartir su valioso trabajo:   </p> -->
+
+                    
+                
+
+              
+                </div>
+
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo" style="color: #ffffffea;">Agradecimientos y Referencias</h2> 
+             
+                    
+                    <p>
+                        La información y los materiales presentados en esta sección han sido gentilmente proporcionados por los siguientes docentes del CECyT No.9 "Juan de Dios Batiz Paredes", a quienes extendemos nuestro más sincero agradecimiento por permitirnos compartir su valioso trabajo:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Jorge Cortés Pérez</strong><br>
+                            Autor de los videos sobre la sección "Química". Para más información sobre su trabajo, puedes encontrar más contenido en <a href="https://www.laligaquimica.com.mx/#h.unowhtmi65eh" target="_blank"> La Liga Química</a>.
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Manuel López Montecinos</strong><br>
+                            Autor de los videos sobre la sección "Química". Para más información sobre su trabajo, puedes encontrar más contenido en <a href="https://www.laligaquimica.com.mx/#h.unowhtmi65eh" target="_blank"> La Liga Química</a>.
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Hortensia Medina Fernández</strong><br>
+                            Autor de los videos sobre la sección "Química". Para más información sobre su trabajo, puedes encontrar más contenido en <a href="https://www.laligaquimica.com.mx/#h.unowhtmi65eh" target="_blank"> La Liga Química</a>.
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Zyanya Mendoza Medina</strong><br>
+                            Autor de los videos sobre la sección "Química". Para más información sobre su trabajo, puedes encontrar más contenido en <a href="https://www.laligaquimica.com.mx/#h.unowhtmi65eh" target="_blank"> La Liga Química</a>.
+                        </li>
+                        <br>
+                    </ul>
+                    <p>
+                        Todo el contenido ha sido utilizado con el permiso expreso de los autores y está sujeto a sus derechos de autor. Agradecemos profundamente su generosidad y contribución al conocimiento compartido.
+                    </p>
+
+                  <li class="list-inline-item border border-light rounded-circle text-center" style="font-size: 2px;">
+                    <a href="https://www.laligaquimica.com.mx/#h.unowhtmi65eh">
+                        <img src="./assets/img/LLQ.png" style="height: 100%; width: 10%;">
+                    </a>
+                </li>
+
+
+          
+                
+            </div>
+            
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Copyright &copy; 2024 Guia Creativa 
+                            | Designed by Guia Creativa
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+
+</body>
+
+</html>
